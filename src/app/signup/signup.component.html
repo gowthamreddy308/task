@@ -1,0 +1,17 @@
+  
+      <div align=center>
+          <div class="w3-blue-grey w3-hover-shadow w3-padding-64 w3-center" style="width:50%">
+          <div class="w3-container w3-center"  >
+
+<form [formGroup]="signup">
+    
+    <label>Email<br>
+          <input  placeholder="Enter Email" formControlName="Email" type="text"><br><br>
+            </label>
+   <label>password<br>
+          <input  placeholder="Enter password" formControlName="password" type="text"><br><br>
+            </label>
+            <button class="btn btn-primary" (click)="signupform(signup)" style="margin-left: 50px">LOGIN</button>
+            <button class="btn btn-primary" (click)="cancel(signup)" type="reset" style="margin-left: 20px">Cancel</button>
+
+</form>  

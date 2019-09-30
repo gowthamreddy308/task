@@ -1,0 +1,22 @@
+    <div align=center>
+    <div class="w3-blue-grey w3-hover-shadow w3-padding-64 w3-center" style="width:50%">
+    <div class="w3-container w3-center"  >
+        
+        <form [formGroup]="login">
+            <label>Firstname<br>
+              <input type="text" placeholder="Enter Firstname" formControlName="firstname"><br>
+            </label>
+            <label>Lastname<br>
+           <input type="text"  placeholder="Enter Lastname" formControlName="lastname"><br>
+           </label>
+            <label>Email<br>
+              <input type="email" placeholder="Enter the email"++ formControlName="email"><br>
+            </label>
+            <label>Password<br>
+              <input type="password" placeholder="Enter the password" formControlName="password">
+            </label><br>
+            <button type="button" style="cursor: pointer;" (click)="loginform(login)">LOGIN</button><br><br>
+    
+          </form>
+    </div>
+  </div>

@@ -1,0 +1,28 @@
+<!-- 
+    <p *ngFor="let todo of todos[0]">
+            userId:{{todo.userId}}, 
+            id:{{todo.id}} ,
+            title:{{todo.title}} ,
+            completed:{{todo.completed}} 
+    </p> -->
+
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">Task List</h2>
+      </div> <br>     
+      <input type="text" [(ngModel)]="term">&emsp;
+      <button>search</button><br><br>
+
+    <table style="width:100%">
+                <tr>
+                  <th>userId</th>
+                  <th>id</th> 
+                  <th>title</th>
+                  <th>completed</th>
+                </tr>
+                <tr  *ngFor="let todo of todos[0] |filter:term">
+                  <td (click)=task(todo.userId)>{{todo.userId}}</td>
+                  <td>{{todo.id}}</td>
+                  <td>{{todo.title}}</td>
+                  <td>{{todo.completed}}</td>
+                </tr>
+              </table>

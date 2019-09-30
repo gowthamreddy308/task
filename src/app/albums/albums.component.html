@@ -1,0 +1,21 @@
+
+
+<table style="width:100%">
+        <tr>
+          <th>albumId</th>
+          <th>id</th> 
+          <th>title</th>
+          <!-- <th>url</th>
+          <th>thumbnailUrl</th> -->
+        </tr>
+        <tr  *ngFor="let photo of photos[0]">
+          <td>{{photo.albumId}}</td>
+          <td>{{photo.id}}</td>
+          <td>{{photo.title}}</td>
+          <!-- <td>{{photo.url}}</td>
+          <td>{{photo.thumbnailUrl}}</td> -->
+          <a target="_blank" href="{{photo.url}}">
+                <img src="{{photo.url}}" alt="Forest" style="width:150px">
+            </a>
+        </tr>
+      </table>

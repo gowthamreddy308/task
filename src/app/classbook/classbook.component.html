@@ -1,0 +1,23 @@
+<div class="form-inline">
+    <input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for movie names.." class="form-control">
+  <button class="btn btn-primary" (click)="addMovie()">Add Movie</button>
+  <button class="btn btn-primary" (click)="logout()" style="margin-left:50px">Logout</button>
+</div>
+<div class="table-responsive">
+  <table class="table" id="myTable">
+    <thead>
+      <tr>
+        <th>MovieName</th>
+        <th>Language</th>
+        <th>Genre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let table of tabledata">
+        <td>{{table.MovieName}}</td>
+        <td>{{table.Language}}</td>
+        <td>{{table.Genre}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
