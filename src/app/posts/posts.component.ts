@@ -18,7 +18,7 @@ posts=[]
        
         this.posts.push(data)
         console.log(this.posts)
-        this.router.navigate(["/CodeComponent"])
+        // this.router.navigate(["/CodeComponent"])
         for(var i=0;i<this.posts.length;i++) {
   
         }
